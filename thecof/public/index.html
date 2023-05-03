@@ -13,7 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/thecof/src/index.css">
     <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -38,7 +38,7 @@
         term:""
       }
     </script>
-    <script src="index.js"></script>
+    <script src="/thecof/src/index.js"></script>
     <title>TheCoF</title>
   </head>
   <body>
@@ -54,6 +54,30 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <div class="top-bar">
+      <div class="container">
+         <div class="header-meta-list">
+          <div>
+            <a href="/">
+             <img src="https://file.hstatic.net/1000075078/file/vector_706a88566eab4f009bed6eea93cd890b.png">
+           <span>154 Cửa hàng khắp cả nước   </span>
+            </a>
+          </div>
+          <div>
+            <a href="/">
+             <img src="https://file.hstatic.net/1000075078/file/group_8de276faa50c486b9d485826c506803b.png">
+           <span>Đặt hàng:1800.69xx   </span>
+            </a>
+          </div>
+          <div>
+            <a href="/">
+             <img src="https://file.hstatic.net/1000075078/file/vector_c337310f409d440f890b370ff9cefe44.png">
+            <span>Freeship mọi đơn hàng:>>   </span>
+            </a>
+          </div>
+         </div>
+      </div>
+    </div>
     <header>
       <div class="jumbotron text-center" style="margin-bottom:0">
        <section>
@@ -66,15 +90,13 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
-  height: 50%;
+  width: 50%;
+  height: auto;
 }
        </style>
       </div>
       <script>
         var myIndex = 0;
-carousel();
-
 function carousel() {
   var i;
   var x = document.getElementsByClassName("mySlides");
@@ -86,6 +108,7 @@ function carousel() {
   x[myIndex-1].style.display = "block";
   setTimeout(carousel, 5000);
 }
+carousel();
       </script>
       <nav class="navbar navbar-inverse">
         <div class="container-fluid">
@@ -150,8 +173,14 @@ function carousel() {
       
       <div class="jumbotron text-center" style="margin-bottom:0">
     </main>
-    <footer>
-
+    <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+      <a href="https://www.facebook.com/sat.ngu.5/"><i class="fa fa-facebook-official"></i></a>
+      <a href="https://www.pinterest.com/business/hub/"><i class="fa fa-pinterest-p"></i></a>
+      <a href="https://twitter.com/TiLee850337"><i class="fa fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/t%C3%A0i-l%C3%AA-thanh-0aa321254/"><i class="fa fa-linkedin"></i></a>
+      <p class="w3-medium">
+      Powered by <a href="https://github.com/" target="_blank">Lê T.Tài</a>
+      </p>
     </footer>
   </body>
 </html>
