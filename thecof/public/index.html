@@ -2,7 +2,7 @@
 <html lang="vi">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="logo-the-coffee-house.png" type="image/png"/>
+    <link rel="icon" href="logoThecof.PNG" type="image/png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -57,19 +57,19 @@
     <div class="top-bar">
       <div class="container">
          <div class="header-meta-list">
-          <div>
+          <div class="list">
             <a href="/">
              <img src="https://file.hstatic.net/1000075078/file/vector_706a88566eab4f009bed6eea93cd890b.png">
            <span>154 Cửa hàng khắp cả nước   </span>
             </a>
           </div>
-          <div>
+          <div class="list">
             <a href="/">
              <img src="https://file.hstatic.net/1000075078/file/group_8de276faa50c486b9d485826c506803b.png">
            <span>Đặt hàng:1800.69xx   </span>
             </a>
           </div>
-          <div>
+          <div class="list">
             <a href="/">
              <img src="https://file.hstatic.net/1000075078/file/vector_c337310f409d440f890b370ff9cefe44.png">
             <span>Freeship mọi đơn hàng:>>   </span>
@@ -90,7 +90,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 40%;
   height: auto;
 }
        </style>
@@ -142,10 +142,11 @@ carousel();
       <div class="container">
         <div class="row">
           <div class="col-sm-4">
-            <h2>About Me</h2>
-            <h5>Photo of me:</h5>
-            <div class="fakeimg">Fake Image</div>
-            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+            <h2>About us</h2>
+           <div class="thecof-logo">
+            <img src="logoThecof.PNG" alt="image/logo">
+           </div>
+            <p>I'm going out for a coffee. Would you like to join? :>></p>
             <h3>Some Links</h3>
             <p>Lorem ipsum dolor sit ame.</p>
             <ul class="nav nav-pills nav-stacked">
@@ -156,17 +157,65 @@ carousel();
             <hr class="hidden-sm hidden-md hidden-lg">
           </div>
           <div class="col-sm-8">
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Dec 7, 2017</h5>
-            <div class="fakeimg">Fake Image</div>
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <h2>Drinks</h2>
+            <h5>BEST SELLER, May 5, 2023</h5>
+            <div class="product-sale">
+              <div class="drinks-container">
+               <section>
+                 <img src="bac_xiu.PNG" alt="image/drinks" class="drinks">
+                <img src="black-ice.PNG" alt="image/drinks" class="drinks">
+                <img src="coffe_caramel.PNG" alt="image/drinks" class="drinks">
+                <img src="coffee-milk.PNG" alt="image/drinks" class="drinks">
+               </section>
+               <script>
+                 var myIndex = 0;
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("drinks");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 10000);
+}
+carousel();
+               </script>
+              </div>
+            </div>
+            <p>Coffe..</p>
+            <p>Coffee has taken over in so many places around the world, leading to some truly unique and delicious variations on the simple cup of black coffee.<br>
+              There's the cinnamon dream of Mexico's Café de Olla. Portugal's iced lemon coffee, Mazagran. The sweet and potent Cà phê đá from Vietnam. And of course, the classic Italian espresso.</p>
             <br>
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Sep 2, 2017</h5>
-            <div class="fakeimg">Fake Image</div>
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <h2>Food</h2>
+            <h5>BEST SELLER, MAY 5, 2023</h5>
+           <div class="product-sale">
+            <div class="food-container">
+              <section>
+                <img src="banh_mi.PNG" alt="image/food" class="foods">
+                <img src="mochi.PNG" alt="image/food" class="foods">
+              </section>
+              <script>
+                var myIndex = 0;
+function carousel() {
+ var i;
+ var x = document.getElementsByClassName("foods");
+ for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+ }
+ myIndex++;
+ if (myIndex > x.length) {myIndex = 1}
+ x[myIndex-1].style.display = "block";
+ setTimeout(carousel, 10000);
+}
+carousel();
+              </script>
+            </div>
+           </div>
+            <p>Mochi..</p>
+          <p>Staring with a shocking fact! People actually could die and get injured while eating mochi. A list of people died from choking on mochi in Japan, though it especially occurs to among aging people.<br>
+            So if you ever come to Japan with your grandparents, make sure you let them eat mochi after cutting it into small pieces. Always beware!</p>
           </div>
         </div>
       </div>

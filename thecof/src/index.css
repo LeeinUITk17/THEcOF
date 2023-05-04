@@ -2248,6 +2248,27 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
   display: flex;
   margin: 0;
   padding: 20px;
-  justify-content: center;
+  justify-content: space-around;
   touch-action: manipulation;
+}
+.drinks-container >div{
+  display: block;
+  width: 50;
+  height: 50;
+  flex: 1;
+  border-radius: 20px;
+}
+.food-container >div{
+  display: block;
+  width: 50;
+  height: 50;
+  flex: 1;
+  border-radius: 20px;
+}
+.thecof-logo >img {
+  display: block;
+  width: 50%;
+  height: auto;
+  flex: 1;
+  border-radius: 12px;
 }
